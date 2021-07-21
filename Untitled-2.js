@@ -1,19 +1,11 @@
+let a = document.getElementById("inp1");
 
 
+      a.addEventListener("focus", function () {
+       a.style.outline = "none"
+        a.style.border = "8px solid green";
+      });
 
-function apparait(){
-
- document.getElementById("test").src="https://risibank.fr/cache/stickers/d493/49375-full.png";
-
-
-}
-
-
-function disparait(){
-
-    document.getElementById("test").src="https://risibank.fr/cache/stickers/d2/224-full.png";
-   
-   
-   }
-
-
+      a.addEventListener("focusout", function () {
+        a.style.border = "8px solid red";
+      });
