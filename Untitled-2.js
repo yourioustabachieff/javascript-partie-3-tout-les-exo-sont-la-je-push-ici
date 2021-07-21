@@ -1,4 +1,4 @@
-let a = document.getElementById("inp1");
+let a = document.getElementById("border");
 
 
       a.addEventListener("focus", function () {
