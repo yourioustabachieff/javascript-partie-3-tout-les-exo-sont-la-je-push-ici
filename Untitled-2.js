@@ -1,11 +1,9 @@
-let a = document.getElementById("border");
+function hipot(){
+  let a = document.getElementById("catet1").value; //cela prends les valeurs saisis par l'utilisateur
+  let b = document.getElementById("catet2").value;
+  let x=(a*a + b*b);
+  c = Math.pow(x, 1/2); //resultat mathemathique est correct hip=(a²+b²)^1/2
+  document.getElementById("resultat").innerHTML = c; //cela insert le valeur d'une variable c dans une id "resultat"
+  };
 
-
-      a.addEventListener("focus", function () {
-       a.style.outline = "none"
-        a.style.border = "8px solid green";
-      });
-
-      a.addEventListener("focusout", function () {
-        a.style.border = "8px solid red";
-      });
+  document.getElementById("bouton").addEventListener("click", hipot); //une fois on est cliqué sur le bouton (class bouton), la fonction s'execute
