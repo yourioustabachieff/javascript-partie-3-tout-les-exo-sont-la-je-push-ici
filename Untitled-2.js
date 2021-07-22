@@ -1,9 +1,22 @@
-function hipot(){
-  let a = document.getElementById("catet1").value; //cela prends les valeurs saisis par l'utilisateur
-  let b = document.getElementById("catet2").value;
-  let x=(a*a + b*b);
-  c = Math.pow(x, 1/2); //resultat mathemathique est correct hip=(a²+b²)^1/2
-  document.getElementById("resultat").innerHTML = c; //cela insert le valeur d'une variable c dans une id "resultat"
-  };
+var rainy = true
+console.log(rainy);
 
-  document.getElementById("bouton").addEventListener("click", hipot); //une fois on est cliqué sur le bouton (class bouton), la fonction s'execute
+
+
+
+
+
+if (rainy ) {
+
+  console.log(rainy, "texte"); 
+console.log("«Bonjour, il pleut aujourd’hui, vous devriez prendre votre parapluie.»")
+
+}
+
+
+else   {
+  console.log(rainy, "texte2"); 
+  console.log("« Bonjour, il ne pleut pas aujourd’hui, bonne journée »")
+  
+  }
+  
