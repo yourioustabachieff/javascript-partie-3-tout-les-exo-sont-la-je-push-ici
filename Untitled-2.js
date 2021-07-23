@@ -1,22 +1,43 @@
-var rainy = true
-console.log(rainy);
+
+var majeurOuMineur2 = document.getElementById("Sub");
 
 
 
 
+// var valueRecup = document.getElementById("sAge").value;
+
+majeurOuMineur2.addEventListener("click", function(event){
 
 
-if (rainy ) {
+  var majeurOuMineur = document.getElementById("sAge");
+  var recup = majeurOuMineur.value;
+  console.log("recup");
 
-  console.log(rainy, "texte"); 
-console.log("«Bonjour, il pleut aujourd’hui, vous devriez prendre votre parapluie.»")
-
-}
+  if (recup >= 18) {
 
 
-else   {
-  console.log(rainy, "texte2"); 
-  console.log("« Bonjour, il ne pleut pas aujourd’hui, bonne journée »")
+    document.getElementById("print").innerHTML="«vous êtes majeur.»";
+    console.log("« vous êtes majeur»");
   
   }
   
+  
+  else   {
+  
+  
+    document.getElementById("print").innerHTML="«vous êtes mineur.»";
+    console.log("« vous êtes mineur»");
+  
+    }
+
+})
+
+
+  
+
+
+
+
+
+
+
