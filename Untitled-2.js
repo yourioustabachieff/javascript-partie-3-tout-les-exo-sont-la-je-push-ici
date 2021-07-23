@@ -4,8 +4,6 @@ var majeurOuMineur2 = document.getElementById("Sub");
 
 
 
-// var valueRecup = document.getElementById("sAge").value;
-
 majeurOuMineur2.addEventListener("click", function(event){
 
 
